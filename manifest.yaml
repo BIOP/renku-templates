@@ -1,0 +1,5 @@
+- folder: VNC-Napari-Fiji-Omero
+  name: VNC-Napari-Fiji-Omero
+  description: A VNC with pre-installed Fiji and Napari, and Fiji-Omero-plugin and ezomero packages.
+  variables:
+    description: Describe your project
