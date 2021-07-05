@@ -1,0 +1,6 @@
+napari
+pandas
+omero-py==5.8.0
+matplotlib
+scikit-learn
+ezomero
