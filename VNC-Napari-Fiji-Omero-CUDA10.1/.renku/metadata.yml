@@ -1,0 +1,30 @@
+'@id': https://sv-renku.epfl.ch/projects/romain.guiet/VNC-Omero-Fiji-Napari-CUDA10.1
+'@type':
+- http://schema.org/Project
+- http://www.w3.org/ns/prov#Location
+http://schema.org/agent: 0.14.2
+http://schema.org/creator:
+  '@id': mailto:romain.guiet@epfl.ch
+  '@type':
+  - http://schema.org/Person
+  - http://www.w3.org/ns/prov#Person
+  http://schema.org/affiliation: null
+  http://schema.org/alternateName: null
+  http://schema.org/email: romain.guiet@epfl.ch
+  http://schema.org/name: Romain Guiet
+  http://www.w3.org/2000/01/rdf-schema#label: Romain Guiet
+http://schema.org/dateCreated: '2021-07-22T07:53:07.379689+00:00'
+http://schema.org/name: VNC-Omero-Fiji-Napari-CUDA10.1
+http://schema.org/schemaVersion: '8'
+https://swissdatasciencecenter.github.io/renku-ontology#automatedTemplateUpdate: false
+https://swissdatasciencecenter.github.io/renku-ontology#immutableTemplateFiles: []
+https://swissdatasciencecenter.github.io/renku-ontology#templateId: imaging
+https://swissdatasciencecenter.github.io/renku-ontology#templateMetadata: '{"__template_source__":
+  "https://github.com/gavin-k-lee/contributed-project-templates", "__template_ref__":
+  "main", "__template_id__": "imaging", "__namespace__": "guiet", "__automated_update__":
+  true, "__repository__": "https://sv-renku-git.epfl.ch", "__sanitized_project_name__":
+  "vnc-omero-fiji-napari-cuda10-1", "__project_slug__": "guiet/vnc-omero-fiji-napari-cuda10-1",
+  "description": "", "name": "VNC-Omero-Fiji-Napari-CUDA10.1"}'
+https://swissdatasciencecenter.github.io/renku-ontology#templateReference: main
+https://swissdatasciencecenter.github.io/renku-ontology#templateSource: https://github.com/gavin-k-lee/contributed-project-templates
+https://swissdatasciencecenter.github.io/renku-ontology#templateVersion: f8ef7bf6442a143d0c3d04de97dbab61397231d0
