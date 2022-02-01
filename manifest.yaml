@@ -8,3 +8,8 @@
   description: A VNC with pre-installed Fiji and Napari, and Fiji-Omero-plugin and ezomero packages with CUDA10.1 installed
   variables:
     description: Describe your project
+- folder: VNC-Napari-Fiji-Omero-CUDA11.4-cellpose-omnipose 
+  name: VNC-Napari-Fiji-Omero-CUDA11.4-cellpose-omnipose 
+  description: A VNC with pre-installed Fiji and Napari, and Fiji-Omero-plugin and ezomero packages with CUDA11.4 , including cellpose and omnipose (0.7) installed
+  variables:
+    description: Describe your project
