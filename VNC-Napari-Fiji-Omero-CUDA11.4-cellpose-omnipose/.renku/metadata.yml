@@ -1,0 +1,30 @@
+'@id': https://sv-renku.epfl.ch/projects/guiet/vnc-omero-fiji-napari-cellpose-omnipose
+'@type':
+- http://schema.org/Project
+- http://www.w3.org/ns/prov#Location
+http://schema.org/agent: 0.16.2
+http://schema.org/creator:
+  '@id': mailto:romain.guiet@epfl.ch
+  '@type':
+  - http://schema.org/Person
+  - http://www.w3.org/ns/prov#Person
+  http://schema.org/affiliation: null
+  http://schema.org/alternateName: null
+  http://schema.org/email: romain.guiet@epfl.ch
+  http://schema.org/name: Romain Guiet
+  http://www.w3.org/2000/01/rdf-schema#label: Romain Guiet
+http://schema.org/dateCreated: '2021-11-17T09:09:48.418781+00:00'
+http://schema.org/name: vnc-omero-fiji-napari-cellpose-omnipose
+http://schema.org/schemaVersion: '8'
+https://swissdatasciencecenter.github.io/renku-ontology#automatedTemplateUpdate: false
+https://swissdatasciencecenter.github.io/renku-ontology#immutableTemplateFiles: []
+https://swissdatasciencecenter.github.io/renku-ontology#templateId: python-minimal
+https://swissdatasciencecenter.github.io/renku-ontology#templateMetadata: '{"__template_source__":
+  "https://github.com/SwissDataScienceCenter/renku-project-template", "__template_ref__":
+  "0.2.1", "__template_id__": "python-minimal", "__namespace__": "guiet", "__automated_update__":
+  true, "__repository__": "https://sv-renku-git.epfl.ch", "__sanitized_project_name__":
+  "vnc-omero-fiji-napari-cellpose-omnipose", "__project_slug__": "guiet/vnc-omero-fiji-napari-cellpose-omnipose",
+  "__renku_version__": "0.16.2", "name": "vnc-omero-fiji-napari-cellpose-omnipose"}'
+https://swissdatasciencecenter.github.io/renku-ontology#templateReference: 0.2.1
+https://swissdatasciencecenter.github.io/renku-ontology#templateSource: https://github.com/SwissDataScienceCenter/renku-project-template
+https://swissdatasciencecenter.github.io/renku-ontology#templateVersion: ee01a22fe6cfb6b8af1f631919e784fa3efd5c6d

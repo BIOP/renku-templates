@@ -1,0 +1,32 @@
+name: py37
+channels:
+  - conda-forge
+  - defaults
+  - ome
+dependencies:
+  - python=3.7
+  - pip
+  - ome::omero-py
+  - pip:
+    - typing_extensions
+    - napari
+    - pandas
+    - cellpose==0.7.1
+    - mxnet-cu100
+    - matplotlib
+    - napari-omero
+  - qtpy
+  - qtconsole
+  - scipy
+  - scikit-image
+  - scikit-learn
+  - vispy
+  - ipython
+  - pyopengl
+  - pyside2
+  - cmake>=3.5.0
+  - mkl
+  - mkl-include
+  - setuptools
+  - cffi
+prefix: "/opt/conda/envs"
