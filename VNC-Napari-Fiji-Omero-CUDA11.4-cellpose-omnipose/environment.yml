@@ -11,10 +11,12 @@ dependencies:
     - typing_extensions
     - napari
     - pandas
-    - cellpose==0.7.1
+    - cellpose==1.0.0
     - mxnet-cu100
     - matplotlib
     - napari-omero
+    - tabulate
+    - astropy
   - qtpy
   - qtconsole
   - scipy
