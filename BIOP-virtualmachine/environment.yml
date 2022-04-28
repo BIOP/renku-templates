@@ -1,0 +1,15 @@
+name: "base"
+channels:
+  - conda-forge
+  - defaults
+  - ome
+dependencies:
+  - qtpy
+  - qtconsole
+  - pyopengl
+  - pip
+  - ome::omero-py
+  - pip:
+      - "napari[all]"
+      - ezomero
+prefix: "/opt/conda"

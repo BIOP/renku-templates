@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.3.3
+Name=ilastik
+GenericName=ilastik
+X-GNOME-FullName=ilastik
+Comment=Scientific Image Analysis
+Type=Application
+Categories=Education;Science;ImageProcessing;
+Exec=/opt/ilastik-1.3.3post3-Linux/run_ilastik.sh
+TryExec=/opt/ilastik-1.3.3post3-Linux/run_ilastik.sh
+Terminal=false
+StartupNotify=true
+Icon=/opt/ilastik-1.3.3post3-Linux/ilastik-meta/ilastik/ilastik-icon.png
+StartupWMClass=ilastik
