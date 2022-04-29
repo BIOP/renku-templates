@@ -1,5 +1,5 @@
 - folder: BIOP-virtualmachine 
-  name: VNC-Napari-Fiji-Omero-CUDA11.4-cellpose-omnipose 
+  name: BIOP-virtualmachine 
   description: A minimal virtualmachine (Fiji,QuPath,ilastik,Napari amd OMERO)
   variables: {} 
 - folder: VNC-Napari-Fiji-Omero
