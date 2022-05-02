@@ -1,3 +1,7 @@
+- folder: BIOP-virtualmachine 
+  name: BIOP-virtualmachine 
+  description: A minimal virtualmachine (Fiji,QuPath,ilastik,Napari amd OMERO)
+  variables: {} 
 - folder: VNC-Napari-Fiji-Omero
   name: VNC-Napari-Fiji-Omero
   description: A VNC with pre-installed Fiji and Napari, and Fiji-Omero-plugin and ezomero packages.
@@ -10,3 +14,5 @@
   name: VNC-Napari-Fiji-Omero-CUDA11.4-cellpose-omnipose 
   description: A VNC with pre-installed Fiji and Napari, and Fiji-Omero-plugin and ezomero packages with CUDA11.4 , including cellpose and omnipose (0.7) installed
   variables: {}
+
+  
