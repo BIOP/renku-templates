@@ -47,8 +47,25 @@ RUN wget -q https://github.com/GReD-Clermont/simple-omero-client/releases/downlo
         && rm simple-omero-client-${SOC_VERSION}.jar \
         && chmod -R a+rwX /opt/Fiji.app/plugins
 
+
+# Add update-sites
+ENV fiji /opt/Fiji.app/ImageJ-linux64
+ENV updateCommand  --update update
+ENV addCommand  --update add-update-site 
+
+RUN ${fiji} ${updateCommand}
+
+RUN ${fiji} ${addCommand} "PTBIOP" "https://biop.epfl.ch/Fiji-Update"
+RUN ${fiji} ${addCommand} "IBMP-CNRS" "https://sites.imagej.net/Mutterer/"
+RUN ${fiji} ${addCommand} "3D ImageJ Suite" "https://sites.imagej.net/Tboudier/"
+RUN ${fiji} ${addCommand} "IJPB-plugins" "https://sites.imagej.net/IJPB-plugins/"
+RUN ${fiji} ${addCommand} "CSBDeep" "https://sites.imagej.net/CSBDeep/"
+RUN ${fiji} ${addCommand} "StarDist" "https://sites.imagej.net/StarDist/"
+
+RUN ${fiji} ${updateCommand}
+
 # Install ilastik
-ENV ilastik_version=1.3.3
+ENV ilastik_version 1.3.3
 RUN wget -q https://files.ilastik.org/ilastik-${ilastik_version}post3-Linux.tar.bz2 \
       && tar -xf ilastik-${ilastik_version}post3-Linux.tar.bz2 -C /opt/ \
       && rm ilastik-${ilastik_version}post3-Linux.tar.bz2 \
@@ -57,6 +74,28 @@ RUN wget -q https://files.ilastik.org/ilastik-${ilastik_version}post3-Linux.tar.
 RUN mkdir -p /home/jovyan/Desktop/
 COPY ilastik.desktop /home/jovyan/Desktop/
 RUN chmod +x /home/jovyan/Desktop/ilastik.desktop
+
+
+#Insall QuPath
+ENV qupath_version 0.3.2
+RUN wget -q https://github.com/qupath/qupath/releases/download/v${qupath_version}/QuPath-${qupath_version}-Linux.tar.xz \
+      && tar -xf QuPath-${qupath_version}-Linux.tar.xz -C /opt/ \
+      && rm QuPath-${qupath_version}-Linux.tar.xz \
+      && chmod u+x /opt/QuPath/bin/QuPath \ 
+      && chmod u+x /opt/QuPath/bin/QuPath.sh
+
+COPY qupath.desktop /home/jovyan/Desktop/
+RUN chmod +x /home/jovyan/Desktop/qupath.desktop
+
+# adds QuPath extensions 
+env QP_EXT_DIR /home/jovyan/Desktop/QuPath_Common_Data/extensions/
+RUN mkdir -p ${QP_EXT_DIR}
+RUN wget -q https://github.com/qupath/qupath-extension-omero/releases/download/v0.3.0/qupath-extension-omero-0.3.0.jar
+RUN mv qupath-extension-omero-0.3.0.jar ${QP_EXT_DIR} \ 
+    && chmod -R a+rwX ${QP_EXT_DIR} \
+    && chmod -R a+rwX ${QP_EXT_DIR}qupath-extension-omero-0.3.0.jar
+
+
 
 
 USER ${NB_USER}
