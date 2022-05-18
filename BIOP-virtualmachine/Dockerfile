@@ -103,6 +103,7 @@ USER ${NB_USER}
 
 # install the python dependencies
 COPY requirements.txt environment.yml /tmp/
+RUN conda update --force conda
 RUN conda env update -q -f /tmp/environment.yml && \
     /opt/conda/bin/pip install -r /tmp/requirements.txt && \
     conda clean -y --all && \
